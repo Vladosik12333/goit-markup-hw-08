@@ -1,0 +1,20 @@
+.modal-phone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.mmodal-phone.is-open {
+  transform: translateX(0);
+}
+
+.modal-phone__close {
+  width: 18px;
+  height: 18px;
+}

@@ -1,38 +1,37 @@
-.four-section {
-  background: #f5f4fa;
-  padding: 94px 0 94px 0;
+.five-section {
+  padding: 60px 0;
 }
 
-.four-section__grid {
+.five-grid {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
-.four-item {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+.five-grid__link {
+  width: 210px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border $duration $timing-function;
+  margin-right: 30px;
+  margin-bottom: 30px;
 
-.four-item__thumb {
-  padding-top: 30px;
-}
+  &:hover,
+  &:focus {
+    border: 1px solid $main-color;
+    color: $main-color;
+    --five-icons: currentColor;
+  }
 
-.four-item__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.187;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $second-color;
-  margin-bottom: 10px;
-}
-
-.four-item__position {
-  font-size: 16px;
-  line-height: 1.187;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $accent-color;
+  .five-grid__icon {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+  }
 }

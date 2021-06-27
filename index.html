@@ -17,6 +17,11 @@
             <div class="container">
                 <nav class="header__nav">
                     <a href="#" class="logo logo--black"><span class="apart-logo">Web</span>Studio</a>
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg class="modal-phone-open js-open-menu">
+                            <use href="./images/icons/sprite.svg#modal-phone-open"></use>
+                        </svg>
+                    </button>
                     <ul class="nav-grid">
                         <li class="nav-grid__item nav-grid__item--margin">
                             <a class="nav-grid__link nav-grid__link--current" href="./index.html">Студия</a>
@@ -123,7 +128,7 @@
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="four-section__grid">
                         <li class="four-item">
-                            <img src="./images/emp1.jpg" alt="Работник 1" width="270" />
+                            <img class="four-item__img" src="./images/emp1.jpg" alt="Работник 1" width="270" />
                             <div class="four-item__thumb">
                                 <h3 class="four-item__name">Игорь Демьяненко</h3>
                                 <p class="four-item__position">Product Designer</p>
@@ -160,7 +165,7 @@
                             </ul>
                         </li>
                         <li class="four-item">
-                            <img src="./images/emp2.jpg" alt="Работник 2" width="270" />
+                            <img class="four-item__img" src="./images/emp2.jpg" alt="Работник 2" width="270" />
                             <div class="four-item__thumb">
                                 <h3 class="four-item__name">Ольга Репина</h3>
                                 <p class="four-item__position">Frontend Developer</p>
@@ -197,7 +202,7 @@
                             </ul>
                         </li>
                         <li class="four-item">
-                            <img src="./images/emp3.jpg" alt="Работник 3" width="270" />
+                            <img class="four-item__img" src="./images/emp3.jpg" alt="Работник 3" width="270" />
                             <div class="four-item__thumb">
                                 <h3 class="four-item__name">Николай Тарасов</h3>
                                 <p class="four-item__position">Marketing</p>
@@ -234,7 +239,7 @@
                             </ul>
                         </li>
                         <li class="four-item">
-                            <img src="./images/emp4.jpg" alt="Работник 4" width="270" />
+                            <img class="four-item__img" src="./images/emp4.jpg" alt="Работник 4" width="270" />
                             <div class="four-item__thumb">
                                 <h3 class="four-item__name">Михаил Ермаков</h3>
                                 <p class="four-item__position">UI Designer</p>
@@ -453,6 +458,29 @@
             </div>
         </div>
         
+        <div class="modal-phone js-menu-container" id="mobile-menu">
+            <!-- Modal phone -->
+            <button class="modal-phone__close js-close-menu">
+                <svg>
+                    <use></use>
+                </svg>
+            </button>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Студия</a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+        </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/modal-phone.js"></script>
     </body>
 </html>

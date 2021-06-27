@@ -1,18 +1,32 @@
 .header {
   background: $standart-color;
   border-bottom: 1px solid #ececec;
-  padding: 24px 0px 25px 0px;
+  padding: 16px 0px 16px 15px;
+  position: relative;
 
   & .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+  }
+}
+
+.modal-phone-open {
+  width: 24px;
+  height: 16px;
+  position: absolute;
+  top: 22px;
+  right: 23px;
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
   }
 }
 
 .header__nav {
-  display: flex;
-  align-items: center;
+  //   display: flex;
+  //   align-items: center;
 }
 
 .nav-grid {
@@ -23,6 +37,7 @@
   color: $second-color;
   display: flex;
   justify-content: space-between;
+  display: none;
 }
 
 .nav-grid__item--margin {
@@ -51,6 +66,7 @@
   letter-spacing: 0.02em;
   color: $accent-color;
   display: flex;
+  display: none;
 }
 
 .contacts-item {

@@ -1,24 +1,27 @@
 .two-section {
-  padding: 94px 0 94px 0;
+  padding: 30px 0 60px 0;
 }
 
-.two-section__grid {
-  display: flex;
-  justify-content: space-between;
-}
+// .two-section__grid {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 .two-item {
-  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .two-item__link {
-  width: 270px;
+  width: 450px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .two-item__icon {
