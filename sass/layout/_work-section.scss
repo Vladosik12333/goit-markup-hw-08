@@ -1,0 +1,30 @@
+.three-section {
+  padding-bottom: 94px;
+}
+
+.three-section__grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.three-item {
+  position: relative;
+}
+
+.three-item__subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $standart-color;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+}

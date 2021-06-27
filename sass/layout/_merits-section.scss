@@ -1,0 +1,45 @@
+.two-section {
+  padding: 94px 0 94px 0;
+}
+
+.two-section__grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-item {
+  width: 270px;
+}
+
+.two-item__link {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.two-item__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.two-item__subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $second-color;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.two-item__text {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+}

@@ -1,0 +1,21 @@
+.logo {
+  font-family: $accent-font;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  cursor: default;
+
+  &--black {
+    margin-right: 93px;
+  }
+
+  &--white {
+    color: $standart-color;
+    margin-bottom: 20px;
+  }
+}
+
+.apart-logo {
+  color: $main-color;
+}

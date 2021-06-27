@@ -1,0 +1,11 @@
+.nav-grid__link--current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -33px;
+  width: 100%;
+  height: 4px;
+  background-color: $main-color;
+  border-radius: 2px;
+  animation: line-in-header $duration $timing-function;
+}

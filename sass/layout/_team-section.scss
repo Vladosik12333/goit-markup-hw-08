@@ -1,0 +1,33 @@
+.five-section {
+  padding: 94px 0;
+}
+
+.five-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.five-grid__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $main-color;
+    color: $main-color;
+    --five-icons: currentColor;
+  }
+}
+
+.five-grid__icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}

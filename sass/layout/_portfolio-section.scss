@@ -1,0 +1,125 @@
+.portfolio-section {
+  padding: 94px 0 94px 0;
+}
+
+/* One ul */
+
+.portfolio-grid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-flow: nowrap;
+}
+
+.portfolio-grid__item {
+  font-family: inherit;
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $second-color;
+  padding: 6px 22px 6px 22px;
+  border: none;
+  transition: color $duration $timing-function,
+    background-color $duration $timing-function,
+    border-radius $duration $timing-function,
+    box-shadow $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $standart-color;
+    background-color: $main-color;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &--margin {
+    margin-right: 8px;
+  }
+}
+
+/* Two ul */
+
+.portfolio-section__grid {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.portfolio-item {
+  background: white;
+  cursor: pointer;
+  transition: box-shadow $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &--margin-bottom {
+    margin-bottom: 30px;
+  }
+
+  &--margin {
+    margin-right: 30px;
+  }
+}
+
+.portfolio-item__meta {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform $duration $timing-function;
+
+  .portfolio-item:hover &,
+  .portfolio-item:focus & {
+    transform: translateY(0);
+  }
+}
+
+.portfolio-item__text {
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+  color: $standart-color;
+}
+
+.portfolio-item__thumb {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-item__subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $second-color;
+  margin-bottom: 4px;
+}
+
+.portfolio-item__subtext {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+}
