@@ -109,15 +109,15 @@
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="three-section__grid">
                         <li class="three-item">
-                            <img src="./images/work1.jpg" alt="Рабочие процессы нашей команды" width="370" />
+                            <img src="./images/work1.jpg" alt="Рабочие процессы нашей команды" srcset="./images/work1@2x.jpg 2x" width="370" />
                             <p class="three-item__subtitle" >Десктопные приложения</p>
                         </li>
                         <li class="three-item">
-                            <img src="./images/work2.jpg" alt="Рабочие процессы нашей команды" width="370" />
+                            <img src="./images/work2.jpg" alt="Рабочие процессы нашей команды" srcset="./images/work2@2x.jpg 2x" width="370" />
                             <p class="three-item__subtitle" >Мобильные приложения</p>
                         </li>
                         <li class="three-item">
-                            <img src="./images/work3.jpg" alt="Рабочие процессы нашей команды" width="370" />
+                            <img src="./images/work3.jpg" alt="Рабочие процессы нашей команды" srcset="./images/work3@2x.jpg 2x" width="370" />
                             <p class="three-item__subtitle" >Дизайнерские решения</p>
                         </li>
                     </ul>
@@ -128,7 +128,7 @@
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="four-section__grid">
                         <li class="four-item">
-                            <img class="four-item__img" src="./images/emp1.jpg" alt="Работник 1" width="270" />
+                            <img class="four-item__img" src="./images/emp1.jpg" alt="Работник 1" srcset="./images/emp1@2x.jpg 2x" width="270" />
                             <div class="four-item__thumb">
                                 <h3 class="four-item__name">Игорь Демьяненко</h3>
                                 <p class="four-item__position">Product Designer</p>
@@ -165,7 +165,7 @@
                             </ul>
                         </li>
                         <li class="four-item">
-                            <img class="four-item__img" src="./images/emp2.jpg" alt="Работник 2" width="270" />
+                            <img class="four-item__img" src="./images/emp2.jpg" alt="Работник 2" srcset="./images/emp2@2x.jpg 2x" width="270" />
                             <div class="four-item__thumb">
                                 <h3 class="four-item__name">Ольга Репина</h3>
                                 <p class="four-item__position">Frontend Developer</p>
@@ -202,7 +202,7 @@
                             </ul>
                         </li>
                         <li class="four-item">
-                            <img class="four-item__img" src="./images/emp3.jpg" alt="Работник 3" width="270" />
+                            <img class="four-item__img" src="./images/emp3.jpg" alt="Работник 3" srcset="./images/emp3@2x.jpg 2x" width="270" />
                             <div class="four-item__thumb">
                                 <h3 class="four-item__name">Николай Тарасов</h3>
                                 <p class="four-item__position">Marketing</p>
@@ -239,7 +239,7 @@
                             </ul>
                         </li>
                         <li class="four-item">
-                            <img class="four-item__img" src="./images/emp4.jpg" alt="Работник 4" width="270" />
+                            <img class="four-item__img" src="./images/emp4.jpg" alt="Работник 4" srcset="./images/emp4@2x.jpg 2x" width="270" />
                             <div class="four-item__thumb">
                                 <h3 class="four-item__name">Михаил Ермаков</h3>
                                 <p class="four-item__position">UI Designer</p>
@@ -461,25 +461,47 @@
         <div class="modal-phone js-menu-container" id="mobile-menu">
             <!-- Modal phone -->
             <button class="modal-phone__close js-close-menu">
-                <svg>
-                    <use></use>
+                <svg class="modal-phone__icon">
+                    <use href="./images/icons/sprite.svg#modal-phone-close"></use>
                 </svg>
             </button>
                 <nav>
-                    <ul>
-                        <li>
+                    <ul class="modal-nav modal-phone___grid">
+                        <li class="modal-nav__item">
                             <a href="./index.html">Студия</a>
                         </li>
-                        <li>
+                        <li class="modal-nav__item">
                             <a href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li>
+                        <li class="modal-nav__item">
                             <a href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-
+                <ul class="modal-contacts modal-phone___grid">
+                    <li>
+                        <a class="modal-contacts__phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li>
+                        <a class="modal-contacts__mail" href="mail:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="modal-media modal-phone___grid">
+                    <li>
+                        <a class="modal-media__link" href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a class="modal-media__link" href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="modal-media__link" href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a class="modal-media__link" href="#">LinkedIn</a>
+                    </li>
+                </ul>
         </div>
+
         <script src="./js/modal.js"></script>
         <script src="./js/modal-phone.js"></script>
     </body>

@@ -1,13 +1,19 @@
 .header {
   background: $standart-color;
   border-bottom: 1px solid #ececec;
-  padding: 16px 0px 16px 15px;
+  padding: 14px 0;
   position: relative;
 
+  @media screen and (min-width: 1200px) {
+    padding: 26px 0;
+  }
+
   & .container {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 
@@ -22,22 +28,37 @@
   &:focus {
     fill: $main-color;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-.header__nav {
-  //   display: flex;
-  //   align-items: center;
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav-grid {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  color: $second-color;
-  display: flex;
-  justify-content: space-between;
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: $second-color;
+    justify-content: space-between;
+    padding-left: 63px;
+    padding-right: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 93px;
+  }
 }
 
 .nav-grid__item--margin {
@@ -60,19 +81,35 @@
 }
 
 .header__contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  display: flex;
   display: none;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .contacts-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
 
 .contacts-item__link {

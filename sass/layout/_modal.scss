@@ -24,14 +24,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: $standart-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform $duration $timing-function,
     visibility $duration $timing-function, opacity $duration $timing-function;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .page__btn-close {
@@ -120,7 +125,7 @@
 }
 
 .form-apart__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -132,6 +137,10 @@
     border-color: $main-color;
     outline: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .form-apart__checkbox {
@@ -140,7 +149,7 @@
   width: 16px;
   height: 15px;
   outline: none;
-  z-index: 2;
+  z-index: 99999;
 }
 
 .form-apart__policy {
@@ -149,8 +158,8 @@
 }
 
 .form-apart__btn {
-  margin: 0 124px;
-  margin-top: 30px;
+  margin: 31px 85px 0 85px;
+  margin-top: 31px;
   width: 200px;
   height: 50px;
   background: $main-color;
@@ -163,6 +172,10 @@
   letter-spacing: 0.06em;
   color: $standart-color;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    margin: 30px 124px 0 124px;
+  }
 }
 
 .modal-checkbox-icon {
@@ -174,7 +187,6 @@
   transition: border-color $duration $timing-function,
     background-color $duration $timing-function;
 
-  .form-apart__checkbox:focus + &,
   .form-apart__checkbox:checked + & {
     animation: image 250ms cubic-bezier(0.4, 0, 0.2, 1) alternate;
     background-repeat: no-repeat;
@@ -188,15 +200,19 @@
 }
 
 .modal-checkbox-label {
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 11px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: $second-color;
   margin-left: 8.76px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .modal-textarea {
-  width: 448px;
+  width: 370px;
   height: 120px;
   resize: none;
   margin-top: 4px;
@@ -216,5 +232,9 @@
     line-height: 1.166;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
   }
 }

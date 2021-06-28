@@ -1,6 +1,9 @@
 .three-section {
   padding-bottom: 94px;
-  display: none;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .three-section__grid {
@@ -26,6 +29,6 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 4px;
+  bottom: 0px;
   left: 0;
 }
