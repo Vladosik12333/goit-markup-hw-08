@@ -62,7 +62,10 @@
 .portfolio-section__grid {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+@media screen {
 }
 
 .portfolio-item {
@@ -86,6 +89,13 @@
       margin-right: 30px;
     }
     width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &--margin {
+      margin-right: 30px;
+    }
+    width: 370px;
   }
 }
 
