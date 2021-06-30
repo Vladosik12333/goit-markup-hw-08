@@ -1479,7 +1479,6 @@ body {
 .portfolio-section__grid {
   display: flex;
   flex-flow: wrap;
-  flex-basis: calc((100% - 30px) / 2);
 }
 
 .portfolio-item {
