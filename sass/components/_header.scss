@@ -1,11 +1,11 @@
 .header {
   background: $standart-color;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid hsl(0, 0%, 93%);
   padding: 14px 0;
   position: relative;
 
-  @media screen and (min-width: 769px) {
-    padding: 26px 0;
+  @media screen and (min-width: 481px) {
+    padding: 0;
   }
 
   & .container {
@@ -42,6 +42,7 @@
   @media screen and (min-width: 481px) {
     display: flex;
     align-items: center;
+    padding: 26px 0;
   }
 }
 
@@ -77,10 +78,6 @@
   &:focus {
     color: $main-color;
     cursor: pointer;
-  }
-
-  &--current {
-    color: $main-color;
   }
 }
 
