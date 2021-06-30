@@ -1,15 +1,18 @@
 .container {
   min-width: 320px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  overflow: hidden;
 
-  @media screen and (min-width: 768px) {
-    min-width: 768px;
-    // max-width: 1199px;
+  @media screen and (min-width: 481px) {
+    min-width: 481px;
+    max-width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 769px) {
+    min-width: 769px;
+    max-width: 1200px;
   }
 }

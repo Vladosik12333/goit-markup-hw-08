@@ -2,12 +2,12 @@
   background: #f5f4fa;
   padding: 60px 0 30px 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     padding: 94px 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .four-section__grid {
     display: flex;
     justify-content: center;
@@ -23,12 +23,12 @@
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     width: 354px;
     margin-left: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     width: 270px;
     margin-bottom: 0;
   }

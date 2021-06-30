@@ -16,7 +16,7 @@
     padding-top: 118px;
     align-items: center;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 769px) {
       padding-top: 200px;
     }
   }
@@ -33,7 +33,7 @@
   }
   background-size: cover;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -54,7 +54,7 @@
     background-size: cover;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     height: 600px;
     background-image: linear-gradient(
         to right,
@@ -90,7 +90,7 @@
   color: $standart-color;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.363;
