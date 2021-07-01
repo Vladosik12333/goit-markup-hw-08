@@ -2,7 +2,7 @@
   padding: 60px 0;
   overflow-y: hidden;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
 }
@@ -19,21 +19,21 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
       width: 33.333%;
     }
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
       width: 170px;
     }
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     min-width: 738px;
     margin-right: -30px;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     min-width: 738px;
     margin-right: -30px;
   }
@@ -57,7 +57,7 @@
     --five-icons: currentColor;
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     margin-right: 30px;
   }
 }

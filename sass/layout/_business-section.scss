@@ -6,9 +6,11 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/background-mobile.jpg");
-  background-repeat: no-repeat;
-  min-width: 320px;
   height: 400px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  max-width: 480px;
 
   & .container {
     display: flex;
@@ -16,7 +18,7 @@
     padding-top: 118px;
     align-items: center;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
       padding-top: 200px;
     }
   }
@@ -31,15 +33,15 @@
       ),
       url("../images/background-mobile@2x.jpg");
   }
-  background-size: cover;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/background-tablet.jpg");
+    max-width: 768px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -51,10 +53,9 @@
         ),
         url("../images/background-tablet@2x.jpg");
     }
-    background-size: cover;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     height: 600px;
     background-image: linear-gradient(
         to right,
@@ -62,6 +63,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/background.jpg");
+    max-width: 1600px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -73,10 +75,6 @@
         ),
         url("../images/background@2x.jpg");
     }
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
-    max-width: 1600px;
   }
 }
 
@@ -90,7 +88,7 @@
   color: $standart-color;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.363;
