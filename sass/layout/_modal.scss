@@ -164,7 +164,6 @@
   width: 16px;
   height: 15px;
   outline: none;
-  z-index: 99999;
   flex-shrink: 0;
 }
 
@@ -204,6 +203,7 @@
   height: 15px;
   border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 4px;
+  z-index: 99999;
   transition: border-color $duration $timing-function,
     background-color $duration $timing-function;
 
